@@ -7,7 +7,7 @@
             "tag": "readdata"
         },
         {
-            "limits": "Classification![2:7],Classification![9:9]",
+            "limits": "Classification![2:5]",
             "type": "filters.range",
             "tag": "nonoise"
         },
