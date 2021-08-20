@@ -2,12 +2,12 @@ import pdal
 import json
 
 PUBLIC_DATA_PATH="https://s3-us-west-2.amazonaws.com/usgs-lidar-public/"
-PIPELINE_PATH='./get_data.json'
+PIPELINE_PATH='get_data.json'
 
 def get_raster_terrain(bounds:str,region:str,PIPELINE_PATH:str=PIPELINE_PATH)->None:
     PUBLIC_ACCESS_PATH=PUBLIC_DATA_PATH + region + "/ept.json"
-    OUTPUT_FILENAME_LAZ='../data/laz/'+region+'.laz'
-    OUTPUT_FILENAME_TIF='../data/tif/'+region+'.tif'
+    OUTPUT_FILENAME_LAZ='./data/laz/'+region+'.laz'
+    OUTPUT_FILENAME_TIF='./data/tif/'+region+'.tif'
 
 
     with open(PIPELINE_PATH) as json_file:

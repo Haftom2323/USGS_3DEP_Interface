@@ -28,7 +28,7 @@ def plot_raster(rast_data, title=''):
 
 def visualize(bounds, region):
     get_raster_terrain(bounds=bounds,region=region)
-    iowa_tif = '../data/tif/'+region+'.tif'
+    iowa_tif = './data/tif/'+region+'.tif'
     raster_iowa = rasterio.open(iowa_tif)
     iowa_data = raster_iowa.read(1)
     count = iowa_data[iowa_data > 0].sum()
